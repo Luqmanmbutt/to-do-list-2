@@ -1,3 +1,28 @@
 .main-container {
-    color: black;
+    border: 5px solid #000000;
+    min-height: 90vh;
+}
+
+.first-container{
+    border: 5px solid #0006b2;
+    min-height: 90vh;
+    margin: 5px;
+}
+
+.to-do-list-title{
+    border: 5px solid #00b215;
+    min-height: 10vh;
+    margin: 5px;
+}
+
+.second-container {
+    border: 5px solid #00b215;
+    min-height: 60vh;
+    margin: 5px;
+}
+
+.add-to-list-container {
+    border: 5px solid #ff0000;
+    min-height: 10vh;
+    margin: 5px;
 }
