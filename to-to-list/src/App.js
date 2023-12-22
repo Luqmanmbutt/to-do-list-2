@@ -3,28 +3,27 @@ import './App.css';
 
 
 
+/**
+ * useState Explained..
+ * 
+ *  The useState hook is a React hook that allows you to add a state to a functional component. The state is data that changes over time, and it is used to keep track of the current state of your component. The useState hook returns an array with two values: the current state value and a function to update it.
+ * 
+ */
+
+
+
+
 function App() {
 
-const AddToList = () => {
+// const [value, setValue] = useState([])
+// const [itemValue, setItemValue] = useState("")
+// console.log("working" , typeof itemValue)
 
-const [inputValue, setInputValue] = useState('');
+const [count, setCount] = useState(0)
 
-
-
-const handleInputChange = (event) => {
-  setInputValue(event.target.value)
-
-  
+const handleClick = () => {
+  setCount(count + 1);
 }
-console.log("its working", handleInputChange())
-
-
-}
-
-
-
-
-
 
 
   return (
@@ -37,7 +36,7 @@ console.log("its working", handleInputChange())
           
           <div className='add-to-list-container'>
              <input></input>
-             <button> click me </button>
+             <button onClick={handleClick}> Count : {count} </button>
           </div>
         </div>
       </div>
