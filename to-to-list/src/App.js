@@ -31,7 +31,8 @@ const [item, setItem] = useState('')
 // console.log("working" , typeof itemValue)
 
 const handleChange = (event) => {
-  console.log("result", event)
+  setItem(event.target.value)
+  console.log("result", item)
 }
 
   return (
